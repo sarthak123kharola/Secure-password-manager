@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Storage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Secure Password Storage</h2>
+
+        <!-- Registration Form -->
+        <div class="form-container">
+            <h3>Register User</h3>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <input type="text" id="register-key" placeholder="Encryption Key" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Retrieve Password Form -->
+        <div class="form-container">
+            <h3>Retrieve Password</h3>
+            <form id="retrieve-form">
+                <input type="text" id="retrieve-username" placeholder="Username" required>
+                <input type="text" id="retrieve-key" placeholder="Decryption Key" required>
+                <button type="submit">Get Password</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
